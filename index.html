@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Christine Carlin — Biographe | de Voix en Mots</title>
+<style>
+    /* ====== POLICES ===== */
+
+      @font-face {
+          font-family: 'Aloha';
+          src: url('fonts/Aloha.woff2') format('woff2');
+          font-weight: normal;
+          font-style: normal;
+      }
+
+      @font-face {
+          font-family: 'BreakOnThrough';
+          src: url('fonts/Botttos.woff2') format('woff2');
+          font-weight: normal;
+          font-style: normal;
+      }
+      
+      @font-face {
+          font-family: 'Calisto';
+          src: url('fonts/CALIST.woff2') format('woff2');
+          font-weight: normal;
+          font-style: normal;
+      }
+
+          @font-face {
+          font-family: 'CalistoBold';
+          src: url('fonts/CALISTB.woff2') format('woff2');
+          font-weight: normal;
+          font-style: normal;
+      }
+
+      @font-face {
+          font-family: 'CalistoBoldItalic';
+          src: url('fonts/CALISTBI.woff2') format('woff2');
+          font-weight: normal;
+          font-style: normal;
+      }
+
+      @font-face {
+          font-family: 'CalistoItalic';
+          src: url('fonts/CALISTI.woff2') format('woff2');
+          font-weight: normal;
+          font-style: normal;
+      }
+
+      @font-face {
+          font-family: 'Gothic';
+          src: url('fonts/GOTHIC.woff2') format('woff2');
+          font-weight: normal;
+          font-style: normal;
+      }
+
+      @font-face {
+          font-family: 'GothicBold';
+          src: url('fonts/GOTHICB.woff2') format('woff2');
+          font-weight: normal;
+          font-style: normal;
+      }
+
+      @font-face {
+          font-family: 'GothicBoldItalic';
+          src: url('fonts/GOTHICBI.woff2') format('woff2');
+          font-weight: normal;
+          font-style: normal;
+      }
+
+      @font-face {
+          font-family: 'GothicItalic';
+          src: url('fonts/GOTHICI.woff2') format('woff2');
+          font-weight: normal;
+          font-style: normal;
+      }
+
+      @font-face {
+          font-family: 'GoudyOldStyle';
+          src: url('fonts/GOUDOS.woff2') format('woff2');
+          font-weight: normal;
+          font-style: normal;
+      }
+
+      @font-face {
+          font-family: 'GoudOldStyleBold';
+          src: url('fonts/GOUDOSB.woff2') format('woff2');
+          font-weight: normal;
+          font-style: normal;
+      }
+
+      @font-face {
+          font-family: 'GoudOldStyleItalic';
+          src: url('fonts/GOUDOSI.woff2') format('woff2');
+          font-weight: normal;
+          font-style: normal;
+      }
+
+      @font-face {
+          font-family: 'HighSpirited';
+          src: url('fonts/HIGHSPIRITED.woff2') format('woff2');
+          font-weight: normal;
+          font-style: normal;
+      }
+
+  :root {
+    --cream: #FBF9F3;
+    --teal: #009190;
+    --teal-dark: #1E5D53;
+    --orange: #E46829;
+    --orange-light : #F6A278;
+    --gray-dark: #464655;
+    --sage: #E3EFE8;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'Calisto', sans-serif;
+    color: var(--gray-dark);
+    background: white;
+  }
+
+  /* ===== HEADER ===== */
+  .site-header {
+    background: var(--cream);
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    padding: 40px 80px;
+    position : sticky;
+    top: 0;
+    gap: 20px;
+    z-index: 10;
+  }
+
+  .header-left {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .header-left img { /* A : logo */
+    width: 300px;
+    height: auto;
+  }
+
+  .brand-name img { /* B : "Christine Carlin" */
+    width: 300px;
+    height: auto;
+  }
+
+  .header-right {
+    text-align: right;
+  }
+
+  .wordmark img { /* C : "de Voix en Mots" */
+    width: 300px;
+    height: auto;
+  }
+
+  .header-quote {
+    font-family: 'CalistoItalic', sans-serif;
+    font-size: 22px;
+    color: var(--gray-dark);
+    margin-top: 6px;
+  }
+
+  /* ===== HERO ===== */
+  .hero {
+    background: var(--teal);
+    color: #fff;
+    padding: 100px 200px 60px;
+  }
+
+  .hero img{
+    width: 800px;
+    margin-left: 10%;
+  }
+
+
+  .hero-quote {
+    text-align: right;
+    font-family : 'CalistoBoldItalic', sans-serif;
+    font-size: 34px;
+    margin-top: 20px;
+  }
+  .hero-quote cite {
+    display: block;
+    font-family : 'Calisto', sans-serif;
+    font-size: 30px;
+    margin-top: 0px;
+  }
+
+  .hero-tagline {
+    margin-top: 50px;
+    font-size: 26px;
+    letter-spacing: 2px;
+    text-align: center;
+    gap: 16px;
+    align-items: center;  
+  }
+  .hero-tagline .dot {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    background: var(--orange);
+    transform: rotate(45deg);
+  }
+
+  /* ===== CONTENT / DECORATIVE LETTERS + CARD ===== */
+  .content {
+    position: relative;
+    min-height: 700px;
+    overflow: hidden;
+  }
+
+  .decorative-letters img { /* D : lettres en cascade */
+    position: absolute;
+    left: 8%;
+    top: -500px;
+    width: 50%;
+    height: auto;
+  }
+
+  .info-card {
+    position: relative;
+    z-index: 2;
+    background: var(--cream);
+    max-width: 900px;
+    height: auto;
+    margin: -60px auto 60px auto;
+    padding: 60px 80px;
+    text-align: center;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+    border-radius: 4px;
+  }
+
+  .info-card h2 {
+    font-family: 'CalistoItalic', sans-serif;
+    color: var(--teal);
+    font-size: 40px;
+    margin-top: 100px;;
+    margin-bottom: 60px;
+  }
+
+  .info-card p {
+    font-size: 18px;
+    margin-bottom: 100px;
+  }
+
+  /* ===== FOOTER ===== */
+  .site-footer {
+    background: var(--sage);
+    padding: 30px 100px;
+    color: var(--gray-dark);
+    position: sticky;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 10;
+  }
+
+  .footer-wordmark {
+    font-family: 'Aloha', sans-serif;
+    font-size: 30px;
+  }
+  .footer-wordmark .accent-orange { color: var(--orange); }
+  .footer-wordmark .accent-teal { color: var(--teal); }
+
+  .footer-copyright {
+    font-family: 'GoudyOldStyle', sans-serif;
+    margin-top: 10px;
+    font-size: 20px;
+    color: var(--teal-dark);
+    border-left: 3px solid var(--orange);
+    padding-left: 10px;
+  }
+
+  /* ===== RESPONSIVE (mobile ~767px) ===== */
+  @media (max-width: 767px) {
+    .site-header {
+      flex-direction: row;
+      align-items: flex-start;
+      padding: 12px 12px;
+    }
+
+    .header-right { text-align: left;}
+    .header-left img { width: 70px; padding-right: 0;}
+    .wordmark img { width: 150px; }
+    .header-quote { display: none;}
+
+    .hero { padding: 40px 20px; }
+    .hero img {width: 90%; }
+    .hero-quote { font-size: 18px; text-align: right; }
+    .hero-tagline {
+      display: none;
+    }
+    .hero-tagline .dot {
+    width: 6px;
+    height: 6px;
+  }
+
+    .decorative-letters img { left: 0; top: -100px; width: 100%; }
+
+    .info-card {
+      margin: 10px 40px 0px;
+      padding: 5px;
+    }
+    .info-card h2 { font-size: 28px; }
+    .info-card p { font-size: 16px; }
+
+    .site-footer { padding: 20px; }
+    .footer-wordmark {font-size: 20px;}
+    .footer-copyright {font-size: 15px;}
+  }
+</style>
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header class="site-header">
+    <div class="header-left">
+      <img src="images/logo.png" alt="Logo Christine Carlin"> <!-- A -->
+      <div class="brand-name"> <!-- B -->
+        <img src="images/nom-prenom.png" alt ="Christine Carlin">
+      </div>
+    </div>
+    <div class="header-right">
+      <div class="wordmark"> <!-- C -->
+        <img src="images/devoixenmots.png" alt ="De Voix en Mots">
+      </div>
+      <div class="header-quote"> <!-- chaque vie est unique -->
+        Chaque vie est unique, chaque histoire mérite d'être racontée
+      </div>
+    </div>
+
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero">
+    <img src="images/nom-biographie.png">
+    <blockquote class="hero-quote">
+      <p>"Chaque biographie est une histoire universelle."</p>
+      <cite>Bernard Groethuysen</cite>
+    </blockquote>
+    <p class="hero-tagline">
+      ECOUTER <span class="dot"></span> RECUEILLIR <span class="dot"></span> TRANSMETTRE
+    </p>
+  </section>
+
+  <!-- ===== CONTENT ===== -->
+  <div class="content">
+    <div class="decorative-letters">
+      <img src="images/bandeau-lettres-accueil.png" alt=""> <!-- D -->
+    </div>
+    <div class="info-card">
+      <h2>Site en création</h2>
+      <p>Bientôt à vos côtés pour transcrire votre histoire.</p>
+    </div>
+  </div>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer">
+    <p class="footer-wordmark">
+      de <span class="accent-orange">V</span>oix en <span class="accent-teal">M</span>ots
+    </p>
+    <p class="footer-copyright">Copyright © 2026 Christine Carlin</p>
+  </footer>
+
+</body>
+</html>
