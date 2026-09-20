@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Biographie Carlin - Foire aux Questions">
+        <title>Christine Carlin — F.A.Q | de Voix en Mots</title>
+        <link href="style.css" rel="stylesheet">
+        <link href="fonts.css" rel="stylesheet">
+        <script src="script-header.js" defer></script> <!-- SCRIPT HEADER -->
+        <script defer> //CHARTE FAQ
+            document.addEventListener('DOMContentLoaded', () => { 
+                document.querySelector('.chart .titre h3').addEventListener('click', function () { 
+                    document.querySelector('.chart-text').classList.toggle('ouvert');
+                    document.querySelector('.lettres11').classList.toggle('ouvert');
+                    document.querySelectorAll('.fleche-faq').forEach(fleche => {
+                        fleche.classList.toggle('ouvert');
+                    });
+                });
+            });
+        </script>
+    </head>
+
+    <body>
+
+        <!-- ===== HEADER ===== -->
+        <section class="full-bg bgh"> 
+            <header class="site-header inner">
+                <div class="logo">
+                    <img src="./images/logo.png" alt="Logo Christine Carlin">
+                </div>
+                <div class="brand-name">
+                    <img src="./images/nom-prenom.png" alt ="Christine Carlin">
+                </div>
+                <button class="menu-toggle" aria-label="Ouvrir le menu">☰</button>
+                <div class="menu">
+                    <a href="./index.html">ACCUEIL</a><span class="dot">.</span>
+                    <a href="./quisuisje.html">QUI SUIS-JE</a><span class="dot">.</span>
+                    <a href="./biographies.html">BIOGRAPHIES</a><span class="dot">.</span> 
+                    <a href="./biographies.html#tarifs">TARIFS</a><span class="dot">.</span>
+                    <a href="./faq.html">F.A.Q</a><span class="dot">.</span>
+                    <a href="./contact.html">CONTACT</a>
+                </div>
+                <div class="wordmark">
+                    <img src="./images/devoixenmots.png" alt ="De Voix en Mots">
+                </div>
+                <div class="header-quote">
+                    Chaque vie est unique, chaque histoire mérite d'être racontée
+                </div>
+            </header>
+        </section>
+
+        <div class="menu-overlay"></div>
+        <section class="lettres10 inner"><img src="./images/bandeau-lettres-qui-suis-je1.png" alt="bandeau de lettres multicolores"></section> <!-- ===== LETTRES ===== -->
+
+        <!-- ===== CONTENT ===== --> <!-- CSS 1365 -->
+        <main>
+            <div class="header-spacer"></div>
+            <section class="full-bg bg13"> <!-- ===== BANDEAU SAGE ===== -->
+                <div class="faq-bg13 inner">
+                    <div class="faq-titre">
+                        <h1>Foire Aux Questions</h1>
+                        <p>Si vous ne trouvez pas de réponses à vos questions ici,<br>n'hésitez pas à me contacter.</p>
+                    </div>
+                    <div class="faq-text post-it1">
+                        <div class="ask">
+                            <h2>Où se déroulent les entretiens ?</h2>
+                            <p>Le premier contact se passe par téléphone ou en visioconférence. <br>Il s’agit pour moi de répondre à vos
+                                questions <span class="gras">sans aucun engagement</span>.
+                            </p>
+                            <p>La première rencontre permet à chacun de s’engager, en définissant précisément la demande et le
+                                déroulé (Voir les <a href="./biographie-carlin-CGV.pdf" target="_blank" rel="noopener noreferrer">Conditions générales de vente</a>).
+                            </p>
+                            <p>Nous définirons ensemble le lieu de nos rencontres : à votre domicile, à mon bureau, sur votre lieu de 
+                                vie, dans un endroit neutre.<br>
+                                Je me déplace dans le département du Vaucluse, au-delà, ce sera une demande particulière à définir 
+                                ensemble. Vous trouverez les tarifs des déplacements dans l’onglet dédié.
+                            </p>
+                        </div>
+                        <div class="ask">
+                            <h2>Pourquoi enregistrer nos échanges ?</h2>
+                            <p>Pendant les entretiens, vous allez hésiter, vous corriger, vous aurez votre ton de narration propre et fidèle 
+                                à ce que vous ressentirez, et  vous donnerez des dates, des noms, des faits importants. Pour ne pas perdre le 
+                                fil de vos pensées ni vous faire répéter, l’enregistrement est nécessaire.</p>
+                        </div>
+                        <div class="ask">
+                            <h2>Comment se passe le règlement ?</h2>
+                            <p>Il dépend du projet, mais, en principe, il s’effectue lors du rendu après chaque entretien, afin d’étaler la dépense et garantir le narrateur et le biographe.<br>
+                            Pour les projets « one shot », le règlement s’effectue pour la moitié à la commande et le solde à la remise de l’ouvrage. 
+                            </p>
+                        </div>
+                    </div>
+                    <img src="./images/faq1.jpeg" alt="Christine prend note" class="faq-img">
+                </div>
+            </section>
+
+            <section class="full-bg bg14"> <!-- ===== BANDEAU TEAL ===== -->
+                <div class="faq-bg14 inner">
+                    <div class="bg14-img"><img src="./images/sable.png" alt="Trust écrit dans le sable (libre de droit)" class="faq-img fili"></div>
+                    <div class="faq-text post-it2">
+                        <div class="ask">
+                            <h2>Comment puis-je suivre l'avancée du récit ?</h2>
+                            <p>À chaque étape, je vous transmets le récit pour relecture et vérification. Une dernière rencontre est dédiée au 
+                                « bouclage » et à la réalisation de l’ouvrage. Vous savez toujours où nous en sommes et vous pouvez orienter 
+                                la narration à tout moment.
+                            </p>
+                        </div>
+                        <div class="ask">
+                            <h2>Comment se présentera le recueil final ?</h2>
+                            <p>C’est un choix personnel. Un ouvrage relié avec photos, un livre « comme un roman », un simple document, un rendu « hors papier » seulement, un récit audio, un album illustré… La liste ne peut être exhaustive, puisqu’elle dépend du projet de chacun.<br>
+                                Tous les enregistrements audio sont votre propriété. 
+                            </p>
+                        </div>
+                        <div class="ask">
+                            <h2>Peut-on faire une écriture à plusieurs voix ?</h2>
+                            <p>Oui, il s’agit alors d’un projet collectif où chacun a sa place et sa parole. Il peut s’agir d’un retour de voyage, une mission humanitaire, un collectif de quartier, l’histoire d’une entreprise, d’un quartier…<br>
+                                À vous les idées, à moi de vous accompagner. 
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="full-bg bg15"> <!-- ===== BANDEAU TEAL-DARK ===== -->
+                <div class="faq-text post-it3 inner">
+                    <div class="ask">
+                        <h2>Puis-je tout raconter, peut-on tout écrire ?</h2>
+                        <p>Votre parole est singulière. Elle peut s’emballer, avec la remontée des souvenirs, dans une émotion débordante, 
+                            que je sais accueillir. Ce qui est dit et entendu ne sera pas forcément écrit, c’est vous qui décidez. 
+                        </p>
+                        <ul><p>Toutefois, je respecte la charte des biographes de <a href="" span="lien">Biographicus</a>, qui sous-entend :</p>
+                            <li>L'empathie et l'écoute bienveillante</li>
+                            <li>La neutralité et le non-jugement</li>
+                            <li>La confidentialité absolue</li>
+                            <li>Le respect d'une éthique morale et respectueuse de la part du narrateur</li>
+                            <li>La non-discrimination</li>
+                        </ul>
+                    </div>
+                    <div class="ask">
+                        <h2>Et si je veux arrêter mon projet ?</h2>
+                        <p>Une clause est prévue dans le contrat parant à cette éventualité.                        
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="chart inner">
+                <div class="titre">
+                    <h2>Charte éthique</h2>
+                    <p>Je respecte la charte éthique de l'association <a href="https://biographicus.fr/nous-rejoindre/" target="_blank" rel="noopener noreferrer">Biographicus</a>, dont je suis adhérente.</p>
+                    <h3><img src="./images/fleche-bas.png" class="fleche-faq">Vous pouvez la retrouver ici<img src="./images/fleche-bas.png" class="fleche-faq"></h3>
+                </div>
+                
+                <div class="lettres11 inner"><img src="./images/bandeau-lettres-faq.png" alt="bandeau de lettres multicolores"></div> <!-- ===== LETTRES ===== -->
+
+                <div class="chart-text">
+                    <h2>Notre charte éthique </h2>
+                    <p>Cette charte, fruit d’une concertation, a été rédigée par le comité éthique de l’association Biographicus. Elle traduit 
+                        la volonté de reconnaître au métier de biographe un savoir-faire et un savoir-être pour aboutir à une culture commune 
+                        et partagée de la profession. Ses membres signataires y adhèrent. La charte de Biographicus se veut un cadre de référence
+                        pour guider les membres dans leurs relations, partenariats et liens professionnels. Ils affirment leur identité et 
+                        s’engagent à respecter les règles propres à la nature de leur activité, quel que soit leur mode d’exercice, salarié ou 
+                        indépendant, et conformément aux lois et règlements en vigueur<br>
+                        Cette charte bâtie sur un socle de valeurs humanistes et fondée sur le droit, fixe les conditions et les principes 
+                        fondamentaux de l’exercice du métier de biographe au sein de l’association. L’adhésion à l’association Biographicus 
+                        implique l’engagement à respecter l’ensemble des articles constitutifs de cette charte.
+                    </p>
+                    <h3>Article 1 </h3>
+                    <p><span class="gras">Respect du client/narrateur : </span>de sa personne, de son rythme, de ses valeurs, de sa vision des choses. Lui offrir une qualité d’écoute, être attentif à ses émotions, être en position empathique et de non jugement, propice à créer un climat de confiance et à libérer la parole. Le biographe s’interdit toute démarche à finalité thérapeutique.
+                    </p>
+                    <h3>Article 2 </h3>
+                    <p><span class="gras">Confidentialité : </span>les propos et les informations recueillis sont confidentiels. Tout enregistrement doit faire l’objet du consentement du client/narrateur.
+                    </p>
+                    <h3>Article 3 </h3>
+                    <p><span class="gras">Transparence et liberté : </span>lors d’un premier entretien gratuit, le biographe explique sa démarche et établit, le cas échéant, un devis. En cas d’acceptation du devis, un contrat détaillé présentant tous les coûts liés à la prestation sera adressé en deux exemplaires au client/narrateur.
+                    </p>
+                    <h3>Article 4 </h3>
+                    <p><span class="gras">Droit de retrait : </span>le biographe exerce dans le respect des principes éthiques édictés par la charte. Il est en droit de refuser toute prestation ou partie d’un projet qu’il considère contraire à son éthique, contenant des propos polémiques, xénophobes, calomnieux, susceptibles de porter atteinte à la sensibilité du public, destinés à tromper et/ou à nuire à son destinataire.
+                    </p>
+                    <h3>Article 5 </h3>
+                    <p><span class="gras">Non-discrimination : </span>le biographe met ses compétences à la disposition des personnes sans distinction de race, de couleur, de sexe, de nationalité, de religion ou d’opinions politiques.
+                    </p>
+                    <h3>Article 6 </h3>
+                    <p><span class="gras">Qualité du service rendu : </span>le biographe veille à présenter au client/narrateur des écrits dans les délais impartis et un travail abouti, respectueux de la prestation attendue. Chaque membre exerçant l’activité de biographe doit s’inscrire dans une démarche d’analyse de la pratique au sein de l’association, au moins une fois par an.
+                    </p>
+                    <h3>Article 7 </h3>
+                    <p><span class="gras">Solidarité et loyauté : </span>l’adhérent observe les devoirs de l’entraide professionnelle et s’abstient de tout acte ou propos diffamatoire portant atteinte à l’association ou à ses membres. Il participe à la cohésion de l’association par sa présence, son esprit de convivialité et sa coopération, pour donner du sens aux actions entreprises. Tous les membres au sein de l’association sont à égalité de droits
+                    </p>
+                    <h3>Article 8 </h3>
+                    <p><span class="gras">Autonomie : </span>chaque membre exerce son activité de façon autonome, avec une méthodologie qui lui est propre, mais respectueuse des valeurs de la présente charte. Il est responsable de sa communication et de la publicité sur son site personnel, et fixe ses propres tarifs. Les membres sont autorisés à se prévaloir de leur appartenance à l’association dans leur communication individuelle, et peuvent utiliser le site Biographicus pour développer leur activité, dans le respect de la ligne éditoriale du site.
+                    </p>
+                    <h3>Article 9 </h3>
+                    <p><span class="gras">Droits d’auteurs, propriété intellectuelle : </span>la propriété intellectuelle de l’ouvrage ainsi rédigé appartient pour part égale au client et au biographe. Au cas où le client ou ses ayants droits décideraient de publier le texte à compte d’éditeur, le biographe pourra lui réclamer et obtenir la moitié des droits d’auteurs. Dans cette hypothèse l’accomplissement des formalités de dépôt légal sera à la charge du client ou de ses ayants droits.<br>
+                        Le biographe peut exprimer dans le contrat son souhait de voir figurer dans le livre la mention « Avec la collaboration de… » ou « Propos recueillis par… » <br>
+                        Aucune publication ne sera effectuée sans le consentement formel du narrateur.
+                    </p>
+                </div>
+            </section>
+        </main>
+
+        <!-- ===== FOOTER ===== -->
+        <section class="full-bg bgf">
+            <footer class="inner">
+                <div class="footer-left">
+                    <p class="footer-wordmark">
+                        de <span class="accent-orange">V</span>oix en <span class="accent-teal">M</span>ots
+                    </p>
+                    <p class="footer-copyright">Copyright © 2026 Christine Carlin</p>
+                </div>
+                <div class="footer-right menu">
+                    <a href="./contact.html#mentions">MENTIONS LÉGALES</a><span class="dot">.</span>
+                    <a href="./biographie-carlin-CGV.pdf" target="_blank" rel="noopener noreferrer">CGV</a><span class="dot">.</span>
+                    <a href="./contact.html">CONTACT</a>
+                </div>
+            </footer>
+        </section>
+
+    </body>

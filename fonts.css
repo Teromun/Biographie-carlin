@@ -1,0 +1,97 @@
+@font-face {
+font-family: 'Aloha';
+src: url('fonts/Aloha.woff2') format('woff2');
+font-weight: normal;
+font-style: normal;
+}
+
+@font-face {
+font-family: 'BreakOnThrough';
+src: url('fonts/Botttos.woff2') format('woff2');
+font-weight: normal;
+font-style: normal;
+}
+
+@font-face {
+font-family: 'Calisto';
+src: url('fonts/CALIST.woff2') format('woff2');
+font-weight: normal;
+font-style: normal;
+}
+
+@font-face {
+font-family: 'CalistoBold';
+src: url('fonts/CALISTB.woff2') format('woff2');
+font-weight: normal;
+font-style: normal;
+}
+
+@font-face {
+font-family: 'CalistoBoldItalic';
+src: url('fonts/CALISTBI.woff2') format('woff2');
+font-weight: normal;
+font-style: normal;
+}
+
+@font-face {
+font-family: 'CalistoItalic';
+src: url('fonts/CALISTI.woff2') format('woff2');
+font-weight: normal;
+font-style: normal;
+}
+
+@font-face {
+font-family: 'Gothic';
+src: url('fonts/GOTHIC.woff2') format('woff2');
+font-weight: normal;
+font-style: normal;
+}
+
+@font-face {
+font-family: 'GothicBold';
+src: url('fonts/GOTHICB.woff2') format('woff2');
+font-weight: normal;
+font-style: normal;
+}
+
+@font-face {
+font-family: 'GothicBoldItalic';
+src: url('fonts/GOTHICBI.woff2') format('woff2');
+font-weight: normal;
+font-style: normal;
+}
+
+@font-face {
+font-family: 'GothicItalic';
+src: url('fonts/GOTHICI.woff2') format('woff2');
+font-weight: normal;
+font-style: normal;
+}
+
+@font-face {
+font-family: 'GoudyOldStyle';
+src: url('fonts/GOUDOS.woff2') format('woff2');
+font-weight: normal;
+font-style: normal;
+}
+
+@font-face {
+font-family: 'GoudyOldStyleBold';
+src: url('fonts/GOUDOSB.woff2') format('woff2');
+font-weight: normal;
+font-style: normal;
+}
+
+@font-face {
+font-family: 'GoudyOldStyleItalic';
+src: url('fonts/GOUDOSI.woff2') format('woff2');
+font-weight: normal;
+font-style: normal;
+}
+
+@font-face {
+font-family: 'HighSpirited';
+src: url('fonts/HIGHSPIRITED.woff2') format('woff2');
+font-weight: normal;
+font-style: normal;
+}

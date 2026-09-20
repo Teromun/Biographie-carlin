@@ -1,0 +1,7 @@
+User-agent: *
+2
+Allow: /
+3
+ 
+4
+Sitemap: https://biographie-carlin.com/sitemap.xml
