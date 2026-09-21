@@ -1,9 +1,9 @@
 document.addEventListener('DOMContentLoaded', () => { // REDUCTION HEADER //
-  const header = document.querySelector('.site-header');
+  const header = document.querySelector('.bgh');
   const logoImg = document.querySelector('.logo img');
 
   function handleScroll() {
-    if (window.scrollY > 0) {
+    if (window.scrollY > 100) {
       header.classList.add('reduit');
       logoImg.src = 'images/logo-mini.png';
     } else {

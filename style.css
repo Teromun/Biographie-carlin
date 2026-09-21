@@ -1,4 +1,4 @@
-/* ===== BODY ===== */
+/* ===== BODY ===== */    /* ===== MOBILE 1972 ===== */
     :root {
     --cream: #FBF9F3;
     --cream-dark: #F3EEE1;
@@ -477,11 +477,10 @@
 
   .carrousel-slide {
     position: absolute;
-    left: 0;
+    inset: 0;
     width: 100%;
     opacity: 0;
-    transform: translateX(100%);
-    transition: transform 1s ease, opacity 1s ease;
+    transition: opacity 0.5s ease;
     pointer-events: none;
   }
 
@@ -495,7 +494,6 @@
 
   .carrousel-slide.active {
     opacity: 1;
-    transform: translateX(0);
     pointer-events: auto;
     z-index: 2;
   }
@@ -1118,7 +1116,7 @@
   color: var(--cream);
   font-size: 1.0em;
   grid-template-columns: 43% 57%;
-  grid-template-rows: 2;
+  grid-template-rows: 1fr 1fr;
   text-align: center;
 }
 
@@ -1973,12 +1971,21 @@ html {
 
   @media screen and (max-width: 700px) {
 
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+    }
+
+    body {margin: 0;}
     /* ===== HEADER MOBILE ===== */
     .site-header {
-        grid-template-columns: 60px 1fr;
+      width: 100%;
+        grid-template-columns: 1fr 1fr;
         grid-template-rows: auto auto;
+        min-width: 0;
         gap: 10px;
-        padding: 15px;
+        padding: 0 15px;
         align-items: center;
         z-index: 20;
     }
@@ -1990,27 +1997,34 @@ html {
         justify-content: center;
         grid-column: 1 / 2;
         grid-row: 1;
-        width: 200px;
-        height: 200px;
+        width: 60px;
+        height: 60px;
         border: none;
         background: transparent;
-        font-size: 70px;
+        font-size: 60px;
         color: var(--gray-dark);
         cursor: pointer;
         z-index: 12;
     }
 
     /* Repositionnement du logo */
-    .brand-name {
+    .site-header .brand-name {
         grid-column: 2 / 3;
         grid-row: 1;
-        justify-self: center;
+        position: relative;
+        top: 10px;
+        left: -60px;
+        width: 80px;
+    }
+    .wordmark img {
+      width: 300px;
     }
 
-    .wordmark {
-      grid-column: 3/4;
-      grid-row: 1;
-      justify-self: center;
+    .site-header.reduit .brand-name {
+      opacity: 1;
+      pointer-events: none;
+      display: block;
+      overflow: visible;
     }
 
     /* On masque les éléments secondaires */
@@ -2020,9 +2034,9 @@ html {
     }
 
     /* Menu fermé */
-    .menu {
+    .site-header .menu {
         position: fixed;
-        top: 240px;
+        top: 155px;
         left: -100%;
         width: 80%;
         max-width: 300px;
@@ -2043,22 +2057,22 @@ html {
     }
 
     /* Menu ouvert */
-    .menu.ouvert {
+    .site-header .menu.ouvert {
       left: 0;
     }
 
-    .menu a {
+    .site-header .menu a {
       display: block;
       font-size: 40px;
       padding-bottom: 50px;
     }
 
-    .menu a::after {
+    .site-header .menu a::after {
       bottom: 40px;
     }
 
     /* Suppression des séparateurs */
-    .menu .dot {
+    .site-header .menu .dot {
       display: none;
     }
 
@@ -2071,6 +2085,7 @@ html {
       visibility: hidden;
       transition: 0.3s;
       z-index: 11;
+      width: 100%;
     }
 
     .menu-overlay.ouvert {
@@ -2088,15 +2103,56 @@ html {
     .site-header.reduit .menu-toggle {
       position: relative;
       top: 20px;
-      left: -40px;
+      left: 0;
+    }
+
+    /* ===== FOOTER MOBILE ===== */
+    .footer-left {
+      padding: 30px 20px;
+    }
+    .footer-right {
+      display: grid;
+      grid-template-columns: 2;
+      grid-template-rows: 2;
+      padding-top: 15px;
+    }
+    .footer-right .dot {
+      display: none;
+    }
+    .footer-right a {
+      font-size: 1.4em;
+      padding-bottom: 15px;
+      text-align: end;
+    }
+    .footer-right .ml {
+      grid-column: 1/3;
     }
 
     /* ===== INDEX ===== */
+    .bg1 {margin-top: 150px;}
+    .content1 {
+      padding: 80px 10%;
+    }
+    .content1 .biographie-img {
+      width: 500px;
+    }
+    .content1-quote {
+      font-size: 1.6em;
+    }
+    .content1-quote cite {
+      font-size: 0.8em;
+    }
+    .content1-tagline {
+      font-size: 22px;
+    }
+    .content1-tagline .dot {
+      font-size: 110px;
+      vertical-align: 2px;
+    }
     .postit .info-photo {
       grid-column: 1 / -1;
       grid-row: 2;
     }
-
     .postit .info-card {
       grid-column: 1 / -1;
       grid-row: 3;
@@ -2119,6 +2175,16 @@ html {
       margin-top: -120px;
       align-self: center;
       justify-self: center;
+      width: 95%;
+      overflow: hidden;
+    }
+    .content2 .carrousel .carrousel-slide {
+      width: 100%;
+      overflow: hidden;
+    }
+    .content2 .carrousel-slide img {
+      overflow: hidden;
+      width: 100%;
     }
 
     .content2 .bio-list {
@@ -2129,6 +2195,9 @@ html {
       height: fit-content;
     }
 
+    .bio-list {
+      padding-left: 10%;
+    }
     .bio-list li {
       font-size: 1.6em;
     }
@@ -2137,9 +2206,10 @@ html {
     }
 
     .content2 .info {
+      grid-column: 1/3;
       grid-row: 4;
       position: relative;
-      top: 1050px;
+      top: 1070px;
       font-size: 1.6em;
     }
     .info a {
@@ -2148,26 +2218,46 @@ html {
     .info .dot {
       vertical-align: 5px;
     }
+    .lettres1 img {
+      width: 100%;
+    }
 
     /* ===== QUI SUIS-JE ===== */
+    .who {
+      margin-top: 200px;
+      grid-template-rows: auto auto auto auto auto;
+    }
+    .who .bg6 {
+      grid-column: 2/5;
+      grid-row: 2/6;
+    }
+
     .who .text1 {
       grid-column: 1/5;
       padding-right: 5%;
     }
     .who .photo {
-      grid-column: 2;
+      grid-column: 1/5;
       grid-row: 4;
       width: 300px;
+    }
+    .who .text2 {
+      grid-column: 2/5;
+      padding-left: 5%;
+      padding-right: 5%;
+      grid-row: 5;
     }
     .who .image {
       display: none;
     }
-
     .moremore .text3 {
       grid-column: 1/-1;
     }
     .more-img {
       display: none;
+    }
+    .moremore h3 {
+      padding: 20px 10px;
     }
 
     .bg8 {
@@ -2180,24 +2270,49 @@ html {
       margin: 0 auto;
     }
 
+    .lettres2, .lettres3 {
+      display: none;
+    }
+
     /* ===== BIOGRAPHIES ===== */
+    .header-spacer {display: none;}
     .bg9 {
-      height: 1750px;
+      height: fit-content;
+      padding-bottom: 30px;
+    }
+    .bg9 h1 {
+      padding-top: 130px;
+      font-size: 3em;
+    }
+    .biog {
+      grid-template-columns: 1fr;
     }
     .biog ul {
       grid-column: 1/-1;
       grid-row: 4;
     }
+    .biog h3 {
+      font-size: 1.6em;
+    }
+    .accordeon .item p .gras {
+      transform : none;
+    }
     .accordeon-images {
+      max-width: 100%;
       grid-column: 1/-1;
       grid-row: 3;
       position: relative;
       top: -30px;
-      margin: 0 auto;
+      place-self: center;
     }
 
+    .bio-how {
+      grid-template-rows: auto auto auto auto auto;
+    }
     .bio-how h2 {
-      margin-bottom: 200px;
+      grid-column: 2/6;
+      margin-right: 10%;
+      margin-bottom: 60px;
     }
     .bio-how .photo {
       position: relative;
@@ -2212,12 +2327,23 @@ html {
       font-size: 1.4em;
     }
 
-    .bio-text2 {
+    .bio-how .bio-text2 {
+      grid-column: 1/-1;
+      grid-row: 4;
       font-size: 1.2em;
+      height: fit-content;
     }
 
     .bg10 {
       padding-bottom: 130px;
+    }
+    .bg10 .bio-how img, .lettres1 {
+      display: none;
+    }
+    .bio-how .bg11 {
+      margin-left: 10px;
+      grid-column: 1/-1;
+      grid-row: 5;
     }
     .bg11 .bg11-img {
       display: none;
@@ -2226,15 +2352,17 @@ html {
       grid-column: 1/-1;
       font-size: 1.5em;
     }
-
     .bio-text2 h4 {
-      position: absolute;
-      padding-top: 20px;
-      padding-right: 70px;
       font-size: 1.2em;
-      padding-bottom: 80px;
+      width: 90%;
     }
 
+    .bouton.contact {
+      left: 25%;
+    }
+    .bg12 {
+      margin-bottom: 150px;
+    }
     .tarif {
       grid-template-columns: 50% 50%;
       grid-template-rows: auto 70px 400px;
@@ -2242,25 +2370,27 @@ html {
     .tarif h2 {
       grid-column: 1;
       grid-row: 1;
-      margin-left: -100px;
+      top: -120px;
       padding: 40px 70px;
     }
     .tarif h3 {
-      grid-column: 2;
+      grid-column: 1/3;
       grid-row: 1;
-      margin-left: -100px;
+      padding-top: 70px;
+      margin-left: 10px;
       font-size: 1.2em;
     }
     .tarif h4 {
       grid-column: 1;
       grid-row: 2;
       font-size: 2em;
+      margin-left: 40px;
       height: 0;
     }
     .tarif .liste1 {
       padding-left: 30px;
       font-size: 1.4em;
-      height: 400px;
+      height: 500px;
     }
     .tarif .liste2 {
       grid-column: 2;
@@ -2268,29 +2398,52 @@ html {
       height: 400px;
     }
     .tarif .adds {
+      grid-column: 1/3;
       font-size: 1.2em;
-      width: 700px;
-      padding: 50px 20px 0 20px;
+      width: 100%;
+      padding: 130px 20px 0 20px;
+    }
+    .tarif .text1 {
+      grid-column: 1/3;
+      grid-row: 5;
+      padding-left: 10px;
+      padding-right: 10px;
+      margin-bottom: 80px;
+      font-size: 1.4em;
     }
     .tarif .btn {
-      grid-column: 2;
+      grid-column: 1/3;
       grid-row: 5;
       position: relative;
-      top: 80px;
-      left: -200px;
+      top: 460px;
+      left: 0;
+      margin-right: 0;
+      padding-right: 0;
+      font-size: 1em;
+      height: fit-content;
+    }
+    .tarif .btn .bouton {
+      position: relative;
+      left: 15%;
     }
 
     /* ===== FAQ ===== */
     .bg13 {
-      height: 1300px;
+      height: 1700px;
+      margin-top: 300px;
     }
     .faq-bg13 .faq-img {
       grid-column: 1/-1;
-      padding-bottom: 50px;
+      margin-bottom: 50px;
     }
     .faq-bg13 .faq-text {
       grid-column: 1/-1;
       grid-row: 3;
+    }
+
+    .bg14 {
+      margin-top: 200px;
+      height: 600px;
     }
     .bg14 img {
       display: none;
@@ -2300,7 +2453,7 @@ html {
       margin: 50px 80px;
     }
     .bg15 {
-      margin-top: 440px;
+      margin-top: 650px;
     }
     .faq-text h2 {
       font-size: 1.6em;
@@ -2309,26 +2462,53 @@ html {
       font-size: 1.4em;
     }
 
+    .chart {
+      margin-top: 100px;
+    }
+    .chart .titre {
+      margin: 0 10%;
+      padding: 30px 5% 20px 5%;
+    }
     .chart-text {
       margin: 0 10% 0 10%;
     }
 
+    .lettres10 {
+      width: 100%;
+    }
     .lettres10 img {
-      left: -600px;
+      width: 100%;
+      top: 0;
+      left: 0;
     }
     .lettres11 {
       top: -100px;
+      left: 0;
+      scale: 1.2;
     }
 
     /* ===== CONTACT ===== */
+    .bg16 {margin-top: 80px; margin-bottom: 60px;}
+
     .contact-img {
       display: none;
     }
     .postit-contact {
-      grid-template-columns: 50% 50%;
+      margin: 0 0 150px 0;
+      grid-template-columns: 1fr;
+      grid-template-rows: auto auto;
     }
+
     .postit-contact .logo.reduit {
+      grid-row: 1;
       display: block;
       width: 400px;
+      justify-self: right;
+      position: relative;
+      left: -12%;
+    }
+    .postit-contact ul {
+      grid-column: 1;
+      grid-row: 2;
     }
   }

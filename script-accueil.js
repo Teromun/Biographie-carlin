@@ -88,3 +88,4 @@ document.addEventListener('DOMContentLoaded', () => { // CARROUSEL AVIS INDEX //
   flecheDroite.addEventListener('click', goToNext);
   flecheGauche.addEventListener('click', goToPrev);
 });
+

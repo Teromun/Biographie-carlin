@@ -99,3 +99,10 @@ document.querySelectorAll('.item h3').forEach(title => {
   });
 });
 
+document.querySelectorAll('*').forEach(el => {
+  const r = el.getBoundingClientRect();
+
+  if (r.right > document.documentElement.clientWidth) {
+    console.log(el, r.right);
+  }
+});
