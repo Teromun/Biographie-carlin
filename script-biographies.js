@@ -60,17 +60,15 @@ document.querySelectorAll('.item h3').forEach(title => {
   title.addEventListener('click', () => {
     const item = title.parentElement;
 
-    // fermer les autres
     document.querySelectorAll('.item').forEach(i => {
       if (i !== item) i.classList.remove('active');
     });
 
-    // ouvrir / fermer celui-ci
     item.classList.toggle('active');
 
   });
 });
-// Fonction de fondu entre les images
+
 function switchImage(index) {
   const images = document.querySelectorAll('.accordeon-img img');
 
@@ -78,23 +76,18 @@ function switchImage(index) {
   images[index].classList.add('active');
 }
 
-// Accordéon + changement d'image
 document.querySelectorAll('.item h3').forEach(title => {
   title.addEventListener('click', () => {
     const item = title.parentElement;
 
-    // fermer les autres items
     document.querySelectorAll('.item').forEach(i => {
       if (i !== item) i.classList.remove('active');
     });
 
-    // ouvrir / fermer celui-ci
     item.classList.toggle('active');
 
-    // récupérer l'index du <li> cliqué
     const index = [...document.querySelectorAll('.item')].indexOf(item);
 
-    // changer l'image selon cet index
     switchImage(index);
   });
 });
