@@ -638,7 +638,12 @@
     text-align: justify;
     padding: 60px 0 40px 10%;
   }
-
+    .who .text1 .iscriptura {
+        text-decoration: none;
+        color: var(--cream);
+        font-family: 'CalistoItalic', sans-serif;
+    }
+    
   .who .photo {
     z-index: 3;
     grid-column: 4;
