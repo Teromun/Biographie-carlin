@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => { // REDUCTION HEADER //
-  const header = document.querySelector('.bgh');
+  const header = document.querySelector('.site-header');
   const logoImg = document.querySelector('.logo img');
 
   function handleScroll() {

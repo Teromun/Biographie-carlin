@@ -1323,6 +1323,10 @@
   font-size: 0.8em;
 }
 
+.tarif .saut-mobile {
+  display: none;
+}
+
 .tarif .adds {
   grid-column: 1/4;
   grid-row: 4;
@@ -2020,15 +2024,8 @@ html {
       width: 300px;
     }
 
-    .site-header.reduit .brand-name {
-      opacity: 1;
-      pointer-events: none;
-      display: block;
-      overflow: visible;
-    }
-
     /* On masque les éléments secondaires */
-    .logo,
+    .logo, .brand-name,
     .header-quote {
         display: none;
     }
@@ -2103,7 +2100,7 @@ html {
     .site-header.reduit .menu-toggle {
       position: relative;
       top: 20px;
-      left: 0;
+      left: 10px;
     }
 
     /* ===== FOOTER MOBILE ===== */
@@ -2231,7 +2228,10 @@ html {
       grid-column: 2/5;
       grid-row: 2/6;
     }
-
+    .who h1 {
+      grid-column: 1/4;
+      padding: 10% 5%;
+    }
     .who .text1 {
       grid-column: 1/5;
       padding-right: 5%;
@@ -2426,7 +2426,13 @@ html {
       position: relative;
       left: 15%;
     }
-
+    .tarif .saut-mobile {
+      display: block;
+    }
+    .tarif .saut-mobile.large::after {
+      content: "";
+      height: 2.8em;
+    }
     /* ===== FAQ ===== */
     .bg13 {
       height: 1700px;
