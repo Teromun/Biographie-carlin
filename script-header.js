@@ -5,10 +5,10 @@ document.addEventListener('DOMContentLoaded', () => { // REDUCTION HEADER //
   function handleScroll() {
     if (window.scrollY > 100) {
       header.classList.add('reduit');
-      logoImg.src = 'images/logo-mini.png';
+      logoImg.src = 'images/logo-mini.webp';
     } else {
       header.classList.remove('reduit');
-      logoImg.src = 'images/logo.png';
+      logoImg.src = 'images/logo.webp';
     }
   }
 
