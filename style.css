@@ -350,20 +350,25 @@
       font-size: 22.0px;
       padding-bottom: 60px;
     }
+    .info-card {
+        padding-left: 20px;
+    }
     .info-card p {
-      font-size: 16.0px;
+      font-size: 22px;
       text-align: justify;
       padding-top: 10px;
       padding-bottom: 10px;
     }
     .info-card .bold {
       font-family: 'CalistoBold', sans-serif;
-      font-size: 18.0px;
+      font-size: 24px;
       color: var(--orange);
       padding-bottom: 0px;
       padding-top: 0;
     }
-
+    .info-photo {
+        padding: 0 30px;
+    }
     .info-photo img{
       border-radius: 10px;
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
