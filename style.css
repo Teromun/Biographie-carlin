@@ -85,7 +85,7 @@
     grid-column: 2/6;
     grid-row: 3/4;
     font-family: 'GoudyOldStyle', sans-serif;
-    font-size: 20px;
+    font-size: 22px;
     }
 
     .menu a {
@@ -350,20 +350,25 @@
       font-size: 22.0px;
       padding-bottom: 60px;
     }
+    .info-card {
+        padding-left: 20px;
+    }
     .info-card p {
-      font-size: 16.0px;
+      font-size: 22px;
       text-align: justify;
       padding-top: 10px;
       padding-bottom: 10px;
     }
     .info-card .bold {
       font-family: 'CalistoBold', sans-serif;
-      font-size: 18.0px;
+      font-size: 24px;
       color: var(--orange);
       padding-bottom: 0px;
       padding-top: 0;
     }
-
+    .info-photo {
+        padding: 0 30px;
+    }
     .info-photo img{
       border-radius: 10px;
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
@@ -430,14 +435,14 @@
   .bio-list li {
     background-size: 16px 16px;
     font-family: 'CalistoBold', sans-serif;
-    font-size: 1.3em;
+    font-size: 1.5em;
   }
 
   .bio-list p {
     margin-top: 10px;
     margin-right: 20%;
     padding-bottom: 20px;
-    font-size: 0.9em;
+    font-size: 1.3em;
     border-bottom: 1px solid var(--green-dark);
   }
 
@@ -743,7 +748,7 @@
     position: relative;
     z-index: 1;
     display: grid;
-    grid-template-columns: 65% 25% 10%;
+    grid-template-columns: 60% 40%;
     grid-template-rows: auto auto auto;
     margin-bottom: 60px;
   }
@@ -765,7 +770,7 @@
   .more-img {
     position: relative;
     display: block;
-    grid-column: 2/4;
+    grid-column: 2;
     grid-row: 1;
     justify-self: center;
     align-self: center;
@@ -807,6 +812,7 @@
     display: flex;
     background-color: var(--cream);
     margin-left: 15%;
+    margin-right: 15%;
     padding: 20px 5%;
     border-radius: 10px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
